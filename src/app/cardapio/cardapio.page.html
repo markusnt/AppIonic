@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+      Cardapio
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<h2> Grupos </h2>
+    <ion-grid>
+      <ion-row >
+          <div *ngFor="let grupo of grupos">
+              <img src="https://picsum.photos/158/465" alt="Smiley face" width="135" height="135">
+        </div>
+        <ion-col >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row class="ion-align-items-stretch">
+            <ion-button *ngFor="let grupo of grupos">
+                {{ grupo.ds_grupo }} 
+            </ion-button>
+          <ion-col >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+          <ion-row class="ion-align-items-center">
+            <ion-col >
+              <ion-button *ngFor="let grupo of grupos">
+                  {{ grupo.ds_grupo }} 
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+    <!-- <ion-list>
+        <ion-item *ngFor="let grupo of grupos">
+  
+          <h2> {{ grupo.ds_grupo }} </h2>
+
+        </ion-item>
+      </ion-list> -->
+
+</ion-content>
